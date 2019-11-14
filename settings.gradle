@@ -1,0 +1,2 @@
+include ':app', ':retrofit_parsing_adapter'
+rootProject.name='RetrofitParsingAdapter'
