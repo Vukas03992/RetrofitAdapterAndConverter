@@ -35,18 +35,11 @@ class Parsable internal constructor(
         }
         val jsonElement = json.makeJsonElement()
 
-        println(jsonElement.toString())
-
         val list = mutableListOf<T>()
-
-        println(list)
 
         jsonElement.asJsonArray.forEach {
             list.add(gson.fromJson(it.asJsonObject, type))
         }
-
-        println(list)
-
         return list
     }
 }

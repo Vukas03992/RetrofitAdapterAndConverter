@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RetrofitParsingAdapter</string>
+    <string name="routes_request">service.getRoutes().apply {\n\u0020\u0020\u0020\u0020doOnSuccess {\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020routes = parseArray(Route::class.java) {\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020asJsonObject["data"]\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020}\n\u0020\u0020\u0020\u0020}\n}
+    </string>
 </resources>
